@@ -1,10 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; 
+    box-sizing: border-box;
     font-family: sans-serif;
-    
+
 }
+
 .HEADER {
     font-family: Roboto;
     font-style: normal;
@@ -15,34 +16,40 @@
     letter-spacing: 0.235em;
     padding-top: 46px;
     color: #282725;
-    
-  } 
-.container{
+
+}
+
+.container_1 {
     width: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-   
+
 }
-.details{
+
+.details {
     max-width: 420px;
     height: 600px;
-    
+
 }
-.container form .details{
+
+.container form .details {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.details .input-box{
+
+.details .input-box {
     padding: 41px;
     margin-bottom: -55px;
 }
-.details .big-box{
+
+.details .big-box {
     margin: 0px;
 }
-.details .input-box input{
-    
+
+.details .input-box input {
+
     width: 340px;
     height: 49px;
     border-style: none;
@@ -51,8 +58,9 @@
     background: #F3F3F3;
     transition: all 0.3s ease;
 }
-.details .big-box input{
-    
+
+.details .big-box input {
+
     width: 353px;
     height: 139px;
     border-style: none;
@@ -61,11 +69,13 @@
     background: #F3F3F3;
     transition: all 0.3s ease;
 }
-.error{
+
+.error {
     color: red;
 }
-button{
-  
+
+button {
+
     color: white;
     width: 323px;
     height: 49px;
@@ -73,13 +83,15 @@ button{
     background: #282725;
     border-radius: 5px;
 }
-@media(max-width:860px){
-    .HEADER{
+
+@media(max-width:860px) {
+    .HEADER {
         letter-spacing: 0px;
     }
-    .container{
+
+    .container {
         letter-spacing: 0.2rem;
         font-size: 16px;
     }
-    
+
 }

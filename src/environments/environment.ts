@@ -5,12 +5,12 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: "AIzaSyChslGSuOngQ82U6CtEiINVPIJFr-y0Dpg",
-  authDomain: "honeycomb-89c4b.firebaseapp.com",
-  projectId: "honeycomb-89c4b",
-  storageBucket: "honeycomb-89c4b.appspot.com",
-  messagingSenderId: "744513014088",
-  appId: "1:744513014088:web:7d623fbedfd209cb474b7d"
+    apiKey: "AIzaSyAPA5t_RX0Cna6igXuLKwwvrv1T1dEpx1E",
+    authDomain: "spothub-j.firebaseapp.com",
+    projectId: "spothub-j",
+    storageBucket: "spothub-j.appspot.com",
+    messagingSenderId: "645254738322",
+    appId: "1:645254738322:web:b841671838f50f678a114b"
   }
 };
 

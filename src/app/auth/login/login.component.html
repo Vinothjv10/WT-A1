@@ -1,8 +1,8 @@
 <div *ngIf="!SignedIn">
     <p class="HEADER" fxFlexAlign="center">LOGIN</p>
 
-    <div class="container" >
-        <form class="details" [formGroup]="loginForm" >
+    <div class="container_1">
+        <form class="details" [formGroup]="loginForm">
             <div class="input-box">
                 <span class="names">Email<label style="color: red;">*</label></span>
                 <input formControlName="email" type="text" class="form-control">
@@ -10,8 +10,8 @@
                     <span class="error" *ngIf="email.errors?.required">*Email is Required.</span>
                     <span class="error" *ngIf="email.errors?.email">*Enter valid e-mail id.</span>
                 </div>
-            </div> 
-            
+            </div>
+
             <div class="input-box">
                 <span class="names">Password<label style="color: red;">*</label></span>
                 <input formControlName="password" type="password" class="form-control">
@@ -19,10 +19,11 @@
                     <span class="error" *ngIf="password.errors?.required">*password is Required.</span>
                     <span class="error" *ngIf="password.errors?.password">*Enter valid e-mail id.</span>
                 </div>
-            </div> 
-    
-            <button type="button" (click)="Signin(email.value,password.value)"  mat-button fxFlexAlign="center">Login</button>
-    
+            </div>
+
+            <button type="button" (click)="Signin(email.value,password.value)" mat-button
+                fxFlexAlign="center">Login</button>
+
         </form>
     </div>
 </div>

@@ -14,15 +14,11 @@ export class CareersComponent implements OnInit {
 
   // filteredString =new FormControl('');
   // locationString = new FormControl('');
-  filteredString: string ='';
-  locationString: string ='';
-  categoryString: string ='';
-  countryString: string ='';
-  countrystring: string='';
+  filteredString: string = '';
 
   items: Jobs[] = [];
-  
-constructor( private router:Router, public firebaseService: AuthService) { }
+
+  constructor(private router: Router, public firebaseService: AuthService) { }
 
   ngOnInit(): void {
     this.firebaseService.getItem().subscribe((data: any[]) => {

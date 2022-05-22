@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { Router,CanActivate } from '@angular/router';
+import { Router, CanActivate } from '@angular/router';
 import { AuthService } from '../auth.service';
 
 
@@ -13,7 +13,7 @@ export class LoginComponent implements OnInit {
 
   SignedIn = false
 
-  constructor(public firebaseService: AuthService,public router: Router ) { }
+  constructor(public firebaseService: AuthService, public router: Router) { }
 
 
   canActivate(): boolean {
@@ -22,33 +22,35 @@ export class LoginComponent implements OnInit {
     }
     return true;
   }
-  
+
   loginForm: any;
 
 
-  ngOnInit(){ 
+  ngOnInit() {
     this.loginForm = new FormGroup({
-      "email": new FormControl(null,[Validators.required,Validators.email]),
-      "password": new FormControl(null,[Validators.required,Validators.pattern('[a-zA-Z ]*')]),
-      
+      "email": new FormControl(null, [Validators.required, Validators.email]),
+      "password": new FormControl(null, [Validators.required, Validators.pattern('[a-zA-Z ]*')]),
+
     });
-   }
-
-   get email() { return this.loginForm.get('email'); }
-   get password() { return this.loginForm.get('password') }
-
-
-   async Signin(email:string, password:string){
-    await this.firebaseService.signin(email,password)
-     if(this.firebaseService.isLoggedIn)
-       this.SignedIn= true
-        // alert("Welcome");
-      
   }
-  Logout(){
-    this.SignedIn = false 
-        window.alert("Thank You");
-    
+
+  get email() { return this.loginForm.get('email'); }
+  get password() { return this.loginForm.get('password') }
+
+
+  async Signin(email: string, password: string) {
+    await this.firebaseService.signin(email, password).catch(err => {
+      alert("🤷‍♂️... User Not Found ...🤷‍♂️");
+    });
+    if (this.firebaseService.isLoggedIn)
+      this.SignedIn = true
+    alert("🙏... Welcome ...🙏");
+
+  }
+  Logout() {
+    this.SignedIn = false
+    window.alert("Thank You");
+
   }
 
 }

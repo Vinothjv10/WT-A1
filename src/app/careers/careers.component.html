@@ -22,40 +22,40 @@
             </table>
         </div>
     </div>
-    <div class="row-2">
+    <!-- <div class="row-2">
         <div class="row-2-1">
             <p id="font">Country</p>
         </div>
         <div class="row-2-2">
             <input id="input" [(ngModel)]="countrystring" type="text" placeholder="  All">
         </div>
-    </div>
-    <div class="row-3">
+    </div> -->
+    <!-- <div class="row-3">
         <div class="row-3-1">
             <p id="font">Locations</p>
         </div>
         <div class="row-3-2">
             <input id="input" [(ngModel)]="locationString" type="text" placeholder="  All">
         </div>
-    </div>
-    <div class="row-4">
+    </div> -->
+    <!-- <div class="row-4">
         <div class="row-4-1">
             <p id="font">Category</p>
         </div>
         <div class="row-4-2">
             <input id="input" [(ngModel)]="categoryString" type="text" placeholder="  All">
         </div>
-    </div>
-    
+    </div> -->
+
 
 </div>
 
 <!--Card Section-->
 
 <div class="container">
-    <div class="row" >
-       
-            <div class="card" id="card1" *ngFor="let job of items | filter: filteredString: locationString: categoryString :countryString :countrystring">
+    <div class="row">
+
+        <div class="card" id="card1" *ngFor="let job of items | filter: filteredString">
 
             <div class="position">
                 <div class="title-head">
@@ -63,10 +63,10 @@
                 </div>
 
                 <p>{{job.category}}</p>
-                
+
                 <p>{{job.location}} </p>
                 <p> {{job.country}}</p>
-                
+
                 <div class="descrip">
                     <p class="font"> {{job.description}} </p>
                 </div>
