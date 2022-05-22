@@ -24,9 +24,9 @@ export class ContactUsComponent implements OnInit {
       // name: ['', Validators.required, Validators.pattern('[a-zA-Z ]*')],
       name: [null, [Validators.required, Validators.pattern('[a-zA-Z ]*')]],
       email: [null, [Validators.required, Validators.email]],
-      "phonenumber": [null, Validators.required, Validators.pattern('[0-9]*')],
-      "company": [null, Validators.required, Validators.pattern('[a-zA-Z ]*')],
-      "help": [null, Validators.required, Validators.pattern('[a-zA-Z ]*')],
+      phonenumber: [null, [Validators.required, Validators.pattern('[0-9]*')]],
+      company: [null, [Validators.required, Validators.pattern('[a-zA-Z ]*')]],
+      help: [null, [Validators.required]],
 
     });
 
@@ -34,12 +34,12 @@ export class ContactUsComponent implements OnInit {
   submitData(data: any) {
 
     this.submitted = true;
-    console.log('true')
+    // console.log('true')
     if (this.registerForm.invalid) {
       return;
     }
 
-    this.http.post('http://localhost:3000/posts', data)
+    this.http.post('http://localhost:3000/contact-us', data)
       .subscribe((result) => {
         console.warn("result", result)
       })
@@ -53,11 +53,11 @@ export class ContactUsComponent implements OnInit {
 
   get f() { return this.registerForm.controls; }
 
-  get name() { return this.registerForm.get('name'); }
-  get company() { return this.registerForm.get('company'); }
-  get email() { return this.registerForm.get('email'); }
-  get phonenumber() { return this.registerForm.get('phonenumber'); }
-  get help() { return this.registerForm.get('help') }
+  // get name() { return this.registerForm.get('name'); }
+  // get company() { return this.registerForm.get('company'); }
+  // get email() { return this.registerForm.get('email'); }
+  // get phonenumber() { return this.registerForm.get('phonenumber'); }
+  // get help() { return this.registerForm.get('help') }
 
 }
 

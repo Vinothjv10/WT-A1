@@ -32,16 +32,20 @@
         </div>
         <div class="input-box">
             <span class="names">Group or Company<label style="color: red;">*</label></span>
-            <input formControlName="company" name="company" type="text" class="form-control">
-            <div *ngIf="company.invalid && (company.touched || company.dirty)">
-                <span class="error" *ngIf="company.errors?.required">*CompanyName is Required.</span>
+            <input formControlName="company" name="company" type="text" class="form-control"
+                [ngClass]="{ 'is-invalid': submitted && f.company.errors }">
+            <div *ngIf="submitted && f.company.errors" class="alert alert-danger mt-2" role="alert">
+                <div *ngIf="f.company.errors.required">Company-Name is Required</div>
+                <div *ngIf="f.company.errors.pattern">Enter only Alphbat</div>
             </div>
         </div>
         <div class="big-box">
             <span class="names">How can we help<label style="color: red;">*</label></span>
-            <textarea formControlName="help" name="help" type="text" class="form-control"></textarea>
-            <div *ngIf="help.invalid && (help.touched || help.dirty)">
-                <span class="error" *ngIf="help.errors?.required">*Enter vaild questions.</span>
+            <textarea formControlName="help" name="help" type="text" class="form-control"
+                [ngClass]="{ 'is-invalid': submitted && f.help.errors }"></textarea>
+            <div *ngIf="submitted && f.help.errors" class="alert alert-danger mt-2" role="alert">
+                <div *ngIf="f.help.errors.required">Any-Question is Required</div>
+
             </div>
         </div>
         <button mat-button>Submit</button>
