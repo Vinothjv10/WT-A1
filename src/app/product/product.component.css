@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    background: transparent;
+}
+.HEADER {
+    padding-top: 46px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 53px;
+
+    text-align: center;
+    letter-spacing: 0.235em;
+
+    color: #282725;
+
+}
+.row{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.card{
+    
+    position: relative;
+    flex: 1;
+    max-width: 541px;
+    height: 510px;
+    margin: 10px;
+
+}
+#card-1{
+    margin-top: 100px;
+    height: 400px;
+    max-width: 568px;
+}
+#card-2{
+    margin-top: 50px;
+}
+.tittle{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 110.19%;
+
+    text-align: center;
+    letter-spacing: 0.125em;
+    text-transform: uppercase;
+
+    color: #DF9C41;
+
+}
+.content{
+    padding-top: 40px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #000000;
+
+}
+.visit{
+    float: left;
+    padding: 30px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+
+    color: #000000;
+
+}
+
+@media(max-width:860px){
+    .row{
+        width: 100%;
+        letter-spacing: 0.1rem;
+        font-size: 16px;
+    }
+    #card-1{
+        margin-top: 50px;
+    }
+    img{
+        padding-top: 120px;
+        max-width: 350px;
+    }
+    .HEADER{
+            letter-spacing: 0px;
+    }
+
+}

@@ -1,0 +1,154 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-bar{
+    background:#241F25 !important;
+    display: flow-root;
+    padding: 0 10% ;
+}
+#check{
+    display: none;
+}
+.logo-header{
+    display: table;
+    float: left;
+    padding: 0;
+    margin: 0;
+    width: 160px;
+    height: 155px;
+    position: relative;
+    z-index: 9;
+}
+ul{
+    float:right;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 70px;
+    border-radius: 14px;
+    margin-top: 40px;
+    padding: 20px;
+}
+nav li a{
+    border: 0;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+    text-decoration: none;
+    transition: all 0.5s;
+    border-radius: 14px;
+} 
+a::after{
+    content: "";
+    display: block;
+    background-color: orange;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+}
+a:hover::after{
+    margin-left: 2px;
+    width: 100%;
+    transition: width .3s;
+}
+@media(max-width: 1250px){
+    .main-bar{
+        padding: 0 2%;
+    }
+    nav li a{
+        padding: 15px 20px;
+    }
+}
+
+.checkbtn{
+    float: left;
+    width: 20px;
+    height: 18px;
+    position: relative;
+    transform: rotate(0);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    top: 25px;
+    display: none;
+}
+
+.checkbtn span{
+    background-color: #fff;
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    border-radius: 1px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0);
+    transition: 0.25s ease-in-out;
+}
+
+.checkbtn span:nth-child(1){
+    top: 0;
+}
+.checkbtn span:nth-child(2){
+    top: 7px;
+}
+.checkbtn span:nth-child(3){
+    top: 14px;
+}
+
+@media(max-width: 992px){
+    .main-bar{
+        padding: 0 10%;
+    }
+    .logo-header{
+       padding-left: 200px;
+    }
+    .checkbtn{
+        display: block;
+        margin-top: 40px;
+        margin-right: 50px;
+    }
+    nav ul{
+        position: absolute;
+        width: 350px;
+        height: 100%;
+        background:#241F25 ;
+        top: 108px;
+        left: -100%;
+        z-index: 2;
+        text-align: center;
+        transition: all 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0px;
+        line-height: 0px;
+
+    }
+    
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+
+@media(max-width: 560px){
+    nav ul{
+        display: block;
+        width: 100%;
+    }
+    .logo-header{
+        padding: 0;
+     }
+}
+
+@media(max-width: 300px){
+    nav ul{
+        display: block;
+        width: 100%;
+    }
+    .logo-header{
+        padding: 0;
+     }
+}

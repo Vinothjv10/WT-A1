@@ -1,0 +1,50 @@
+<p class="HEADER" fxFlexAlign="center">CONTACT US</p>
+
+<div class="container_1">
+
+    <form class="details" #userPost="ngForm" [formGroup]="registerForm" (ngSubmit)="submitData(userPost.value)">
+        <div class="input-box">
+            <span class="names">Name<label style="color: red;">*</label></span>
+            <input formControlName="name" name="name" type="text" class="form-control"
+                [ngClass]="{ 'is-invalid': submitted && f.name.errors }">
+            <div *ngIf="submitted && f.name.errors" class="alert alert-danger mt-2" role="alert">
+                <span *ngIf="f.name.errors.required">*Name is Required.</span>
+                <span *ngIf="f.name.errors.pattern">*Enter only Character.</span>
+            </div>
+        </div>
+        <div class="input-box">
+            <span class="names">Email<label style="color: red;">*</label></span>
+            <input formControlName="email" name="email" type="text" class="form-control"
+                [ngClass]="{ 'is-invalid': submitted && f.email.errors }">
+            <div *ngIf="submitted && f.email.errors" class="alert alert-danger mt-2" role="alert">
+                <div *ngIf="f.email.errors.required">Email is required</div>
+                <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
+            </div>
+        </div>
+        <div class="input-box">
+            <span class="names">Phone Number<label style="color: red;">*</label></span>
+            <input formControlName="phonenumber" name="phoneNumber" type="text" class="form-control"
+                [ngClass]="{ 'is-invalid': submitted && f.phonenumber.errors }">
+            <div *ngIf="submitted && f.phonenumber.errors" class="alert alert-danger mt-2" role="alert">
+                <div *ngIf="f.phonenumber.errors.required">Phone Number is Required</div>
+                <div *ngIf="f.phonenumber.errors.pattern">Enter only Numbers</div>
+            </div>
+        </div>
+        <div class="input-box">
+            <span class="names">Group or Company<label style="color: red;">*</label></span>
+            <input formControlName="company" name="company" type="text" class="form-control">
+            <div *ngIf="company.invalid && (company.touched || company.dirty)">
+                <span class="error" *ngIf="company.errors?.required">*CompanyName is Required.</span>
+            </div>
+        </div>
+        <div class="big-box">
+            <span class="names">How can we help<label style="color: red;">*</label></span>
+            <textarea formControlName="help" name="help" type="text" class="form-control"></textarea>
+            <div *ngIf="help.invalid && (help.touched || help.dirty)">
+                <span class="error" *ngIf="help.errors?.required">*Enter vaild questions.</span>
+            </div>
+        </div>
+        <button mat-button>Submit</button>
+    </form>
+
+</div>

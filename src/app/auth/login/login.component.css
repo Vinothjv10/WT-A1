@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: sans-serif;
+    
+}
+.HEADER {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 53px;
+    text-align: center;
+    letter-spacing: 0.235em;
+    padding-top: 46px;
+    color: #282725;
+    
+  } 
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+   
+}
+.details{
+    max-width: 420px;
+    height: 600px;
+    
+}
+.container form .details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.details .input-box{
+    padding: 41px;
+    margin-bottom: -55px;
+}
+.details .big-box{
+    margin: 0px;
+}
+.details .input-box input{
+    
+    width: 340px;
+    height: 49px;
+    border-style: none;
+    outline: none;
+    font-size: 18px;
+    background: #F3F3F3;
+    transition: all 0.3s ease;
+}
+.details .big-box input{
+    
+    width: 353px;
+    height: 139px;
+    border-style: none;
+    outline: none;
+    font-size: 18px;
+    background: #F3F3F3;
+    transition: all 0.3s ease;
+}
+.error{
+    color: red;
+}
+button{
+  
+    color: white;
+    width: 323px;
+    height: 49px;
+    margin: 47px;
+    background: #282725;
+    border-radius: 5px;
+}
+@media(max-width:860px){
+    .HEADER{
+        letter-spacing: 0px;
+    }
+    .container{
+        letter-spacing: 0.2rem;
+        font-size: 16px;
+    }
+    
+}

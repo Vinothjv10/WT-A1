@@ -1,0 +1,26 @@
+.HEADER {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 53px;
+    text-align: center;
+    letter-spacing: 0.235em;
+    padding-top: 46px;
+    color: #282725;
+    
+  } 
+
+  .HEADERs {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 53px;
+    text-align: center;
+    letter-spacing: 0.235em;
+    padding-top: 10px;
+    text-transform: uppercase;
+    color: red;
+    
+  } 
