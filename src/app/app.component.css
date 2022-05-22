@@ -1,17 +1,20 @@
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.main-bar{
-    background:#241F25 !important;
+
+.main-bar {
+    background: #241F25 !important;
     display: flow-root;
-    padding: 0 10% ;
+    padding: 0 10%;
 }
-#check{
+
+#check {
     display: none;
 }
-.logo-header{
+
+.logo-header {
     display: table;
     float: left;
     padding: 0;
@@ -21,17 +24,20 @@
     position: relative;
     z-index: 9;
 }
-ul{
-    float:right;
+
+ul {
+    float: right;
 }
-nav ul li{
+
+nav ul li {
     display: inline-block;
     line-height: 70px;
     border-radius: 14px;
     margin-top: 40px;
     padding: 20px;
 }
-nav li a{
+
+nav li a {
     border: 0;
     font-size: 16px;
     line-height: 24px;
@@ -39,8 +45,9 @@ nav li a{
     text-decoration: none;
     transition: all 0.5s;
     border-radius: 14px;
-} 
-a::after{
+}
+
+a::after {
     content: "";
     display: block;
     background-color: orange;
@@ -49,21 +56,24 @@ a::after{
     left: 0;
     bottom: -10px;
 }
-a:hover::after{
+
+a:hover::after {
     margin-left: 2px;
     width: 100%;
     transition: width .3s;
 }
-@media(max-width: 1250px){
-    .main-bar{
+
+@media(max-width: 1250px) {
+    .main-bar {
         padding: 0 2%;
     }
-    nav li a{
+
+    nav li a {
         padding: 15px 20px;
     }
 }
 
-.checkbtn{
+.checkbtn {
     float: left;
     width: 20px;
     height: 18px;
@@ -75,7 +85,7 @@ a:hover::after{
     display: none;
 }
 
-.checkbtn span{
+.checkbtn span {
     background-color: #fff;
     display: block;
     position: absolute;
@@ -88,67 +98,75 @@ a:hover::after{
     transition: 0.25s ease-in-out;
 }
 
-.checkbtn span:nth-child(1){
+.checkbtn span:nth-child(1) {
     top: 0;
 }
-.checkbtn span:nth-child(2){
+
+.checkbtn span:nth-child(2) {
     top: 7px;
 }
-.checkbtn span:nth-child(3){
+
+.checkbtn span:nth-child(3) {
     top: 14px;
 }
 
-@media(max-width: 992px){
-    .main-bar{
+@media(max-width: 992px) {
+    .main-bar {
         padding: 0 10%;
     }
-    .logo-header{
-       padding-left: 200px;
+
+    .logo-header {
+        padding-left: 200px;
     }
-    .checkbtn{
+
+    .checkbtn {
         display: block;
         margin-top: 40px;
         margin-right: 50px;
     }
-    nav ul{
+
+    nav ul {
         position: absolute;
         width: 350px;
         height: 100%;
-        background:#241F25 ;
+        background: #241F25;
         top: 108px;
         left: -100%;
         z-index: 2;
         text-align: center;
         transition: all 0.5s;
     }
-    nav ul li{
+
+    nav ul li {
         display: block;
         margin: 50px 0px;
         line-height: 0px;
 
     }
-    
-    #check:checked ~ ul{
+
+    #check:checked~ul {
         left: 0;
     }
 }
 
-@media(max-width: 560px){
-    nav ul{
+@media(max-width: 560px) {
+    nav ul {
         display: block;
         width: 100%;
     }
-    .logo-header{
+
+    .logo-header {
         padding: 0;
-     }
+    }
 }
 
-@media(max-width: 300px){
-    nav ul{
+@media(max-width: 300px) {
+    nav ul {
         display: block;
         width: 100%;
     }
-    .logo-header{
+
+    .logo-header {
         padding: 0;
-     }
+    }
 }

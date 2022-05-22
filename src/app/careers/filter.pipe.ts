@@ -11,8 +11,7 @@ export class FilterPipe implements PipeTransform {
     if (!items) return items;
 
     return items.filter(job =>
-
-      job.name.toLocaleLowerCase().includes(filterString.toLocaleLowerCase())
+      job.country.toLocaleLowerCase().includes(filterString.toLocaleLowerCase())
     );
 
   }

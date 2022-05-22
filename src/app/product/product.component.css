@@ -1,8 +1,9 @@
-*{
+* {
     padding: 0;
     margin: 0;
     background: transparent;
 }
+
 .HEADER {
     padding-top: 46px;
     font-style: normal;
@@ -16,14 +17,16 @@
     color: #282725;
 
 }
-.row{
+
+.row {
     width: 100%;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
-.card{
-    
+
+.card_1 {
+
     position: relative;
     flex: 1;
     max-width: 541px;
@@ -31,15 +34,18 @@
     margin: 10px;
 
 }
-#card-1{
+
+#card-1 {
     margin-top: 100px;
     height: 400px;
     max-width: 568px;
 }
-#card-2{
+
+#card-2 {
     margin-top: 50px;
 }
-.tittle{
+
+.tittle {
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
@@ -53,7 +59,8 @@
     color: #DF9C41;
 
 }
-.content{
+
+.content {
     padding-top: 40px;
     font-family: Poppins;
     font-style: normal;
@@ -64,7 +71,8 @@
     color: #000000;
 
 }
-.visit{
+
+.visit {
     float: left;
     padding: 30px;
     font-family: Poppins;
@@ -78,21 +86,24 @@
 
 }
 
-@media(max-width:860px){
-    .row{
+@media(max-width:860px) {
+    .row {
         width: 100%;
         letter-spacing: 0.1rem;
         font-size: 16px;
     }
-    #card-1{
+
+    #card-1 {
         margin-top: 50px;
     }
-    img{
+
+    img {
         padding-top: 120px;
         max-width: 350px;
     }
-    .HEADER{
-            letter-spacing: 0px;
+
+    .HEADER {
+        letter-spacing: 0px;
     }
 
 }

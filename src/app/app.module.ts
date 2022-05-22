@@ -46,7 +46,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     AboutusComponent,
     CareersComponent,
     ProductComponent,
-    FilterPipe,
+    // FilterPipe,
     LoginComponent,
     DashboardComponent,
     PageNotFoundComponent,

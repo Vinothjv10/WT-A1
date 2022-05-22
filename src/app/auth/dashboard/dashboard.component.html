@@ -1,70 +1,70 @@
 <div>
     <p class="HEADER" fxFlexAlign="center">ADMIN PANEL</p>
 
-    <button class="btn" >ADD</button>
- 
-    <div class="container" >
-        <div class="row" >
-                           <!--  Card Section  -->
+    <!-- <button class="btn">ADD</button> -->
+
+    <div class="container-1">
+        <div class="row">
+            <!--  Card Section  -->
 
 
             <div class="card" id="card1" *ngFor="let job of items">
-                
-                    <div class="position">   
 
-                        <div class="title-head" *ngIf='edit'>
-                            {{job.name | uppercase }}
-                        </div>
-                        <div class="title-head1" *ngIf='editstate && itemto == job.id'>
-                            <input class="input-name" [(ngModel)]="job.name" type="text">
-                        </div>                 
-                        
-                           <!--   Button Event       -->
-                        
-                        <div class="buttons">
-                            <button *ngIf='edit' (click)="editItem($event,job)" class="but-mid1" type="submit">Edit</button>
-                            <button (click)="updateId(job)" class="but-mid3" type="submit">Save</button>
-                            <button (click)="delete(job.id)" class="but-mid2" type="submit">Delete</button>
-                        </div>     
+                <div class="position">
 
-                        <div class="category" *ngIf='edit'>
-                            <p>{{job.category}}</p>
-                        </div>
-                        <div class="title-head1" *ngIf='editstate && itemto == job.id'>
-                            <input class="input-name" [(ngModel)]="job.category" type="text">
-                        </div> 
-
-                        <div class="location" *ngIf='edit'>
-                            <p>{{job.location}}</p>
-                        </div>
-                        <div class="title-head1" *ngIf='editstate && itemto == job.id'>
-                            <input class="input-name" [(ngModel)]="job.location" type="text">
-                        </div> 
-
-                        <div class="country" *ngIf='edit'>
-                            <p>{{job.country}}</p>
-                        </div>
-                        <div class="title-head1" *ngIf='editstate && itemto == job.id'>
-                            <input class="input-name" [(ngModel)]="job.country" type="text">
-                        </div> 
-
-                        <div *ngIf='edit'>
-                            <p class="font"> {{job.description}}  </p>
-                        </div >
-                        <div *ngIf='editstate && itemto == job.id' class="title-head1">
-                            <textarea class="input-para" [(ngModel)]="job.description" type="text"></textarea>
-                        </div>
-
+                    <div class="title-head" *ngIf='edit'>
+                        {{job.name | uppercase }}
                     </div>
-          </div> 
+                    <div class="title-head1" *ngIf='editstate && itemto == job.id'>
+                        <input class="input-name" [(ngModel)]="job.name" type="text">
+                    </div>
+
+                    <!--   Button Event       -->
+
+                    <div class="buttons">
+                        <button *ngIf='edit' (click)="editItem($event,job)" class="but-mid1" type="submit">Edit</button>
+                        <button (click)="updateId(job)" class="but-mid3" type="submit">Save</button>
+                        <button (click)="delete(job.id)" class="but-mid2" type="submit">Delete</button>
+                    </div>
+
+                    <div class="category" *ngIf='edit'>
+                        <p>{{job.category}}</p>
+                    </div>
+                    <div class="title-head1" *ngIf='editstate && itemto == job.id'>
+                        <input class="input-name" [(ngModel)]="job.category" type="text">
+                    </div>
+
+                    <div class="location" *ngIf='edit'>
+                        <p>{{job.location}}</p>
+                    </div>
+                    <div class="title-head1" *ngIf='editstate && itemto == job.id'>
+                        <input class="input-name" [(ngModel)]="job.location" type="text">
+                    </div>
+
+                    <div class="country" *ngIf='edit'>
+                        <p>{{job.country}}</p>
+                    </div>
+                    <div class="title-head1" *ngIf='editstate && itemto == job.id'>
+                        <input class="input-name" [(ngModel)]="job.country" type="text">
+                    </div>
+
+                    <div *ngIf='edit'>
+                        <p class="font"> {{job.description}} </p>
+                    </div>
+                    <div *ngIf='editstate && itemto == job.id' class="title-head1">
+                        <textarea class="input-para" [(ngModel)]="job.description" type="text"></textarea>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </div>
-    
-    
-    
-    
+
+
+
+
     <div class="but-ton">
-        <button class="but-last" (click)="logout()" >logout</button>
-    </div> 
+        <button class="but-last" (click)="logout()">logout</button>
+    </div>
 
 </div>

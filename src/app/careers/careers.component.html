@@ -5,9 +5,9 @@
 
 
 <!--Input Box-->
-<div class="rows">
+<!-- <div class="rows"> -->
 
-    <div class="row-1">
+<!-- <div class="row-1">
         <div class="boxcontainer">
             <table class="elementscontainer">
                 <tr>
@@ -21,8 +21,8 @@
                 </tr>
             </table>
         </div>
-    </div>
-    <!-- <div class="row-2">
+    </div> -->
+<!-- <div class="row-2">
         <div class="row-2-1">
             <p id="font">Country</p>
         </div>
@@ -30,7 +30,7 @@
             <input id="input" [(ngModel)]="countrystring" type="text" placeholder="  All">
         </div>
     </div> -->
-    <!-- <div class="row-3">
+<!-- <div class="row-3">
         <div class="row-3-1">
             <p id="font">Locations</p>
         </div>
@@ -38,7 +38,7 @@
             <input id="input" [(ngModel)]="locationString" type="text" placeholder="  All">
         </div>
     </div> -->
-    <!-- <div class="row-4">
+<!-- <div class="row-4">
         <div class="row-4-1">
             <p id="font">Category</p>
         </div>
@@ -48,24 +48,45 @@
     </div> -->
 
 
-</div>
+<!-- </div> -->
 
 <!--Card Section-->
 
-<div class="container">
-    <div class="row">
+<div class="container_10">
+    <div class="rows">
 
-        <div class="card" id="card1" *ngFor="let job of items | filter: filteredString">
+        <div class="card" id="card1" *ngFor="let job of items ">
 
             <div class="position">
                 <div class="title-head">
                     <h1 class="font-1"> {{job.name | uppercase }} </h1>
                 </div>
 
+                <!-- <span>Category</span>
                 <p>{{job.category}}</p>
 
+                <span>Location</span>
                 <p>{{job.location}} </p>
-                <p> {{job.country}}</p>
+
+                <span>Country</span>
+                <span> {{job.country}}</span> -->
+                <table>
+                    <tr>
+                        <td style="width: 60px;">Category</td>
+                        <td>:</td>
+                        <td>{{job.category}}</td>
+                    </tr>
+                    <tr>
+                        <td>Location</td>
+                        <td style="width: 60px;">:</td>
+                        <td>{{job.location}}</td>
+                    </tr>
+                    <tr>
+                        <td>Country</td>
+                        <td>:</td>
+                        <td>{{job.country}}</td>
+                    </tr>
+                </table>
 
                 <div class="descrip">
                     <p class="font"> {{job.description}} </p>

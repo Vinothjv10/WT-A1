@@ -9,6 +9,7 @@
   padding-top: 46px;
   color: #282725;
 }
+
 .but-ton {
   text-align: center;
   padding-top: 60px;
@@ -16,7 +17,7 @@
 
 /*  Box Container */
 
-.container {
+.container-1 {
   margin: 20px;
   padding-top: 10px;
 }
@@ -35,6 +36,7 @@
   height: 500px;
   margin: 40px;
 }
+
 #card1 {
   max-width: 400px;
 }
@@ -44,6 +46,7 @@
   padding-left: 10px;
   color: #e40276;
 }
+
 .font {
   padding: 5px;
   font-family: Poppins;
@@ -54,12 +57,14 @@
   margin-top: 20px;
   color: #282725;
 }
+
 .login,
 h3 {
   text-align: center;
   font-size: 23px;
   font-family: 600px;
 }
+
 .but-last {
   height: 50px;
   width: 120px;
@@ -68,15 +73,18 @@ h3 {
   text-align: center;
   border-radius: 5px;
 }
+
 .title-head {
   font-size: 24px;
   font-weight: 400px;
   margin-top: 20px;
   padding-bottom: 10px;
 }
+
 .title-head1 {
   margin-top: 30px;
 }
+
 .but-mid2 {
   padding: 7px;
   background: red;
@@ -85,6 +93,7 @@ h3 {
   border-radius: 5px;
   cursor: pointer;
 }
+
 .but-mid3 {
   padding: 7px;
   background: blue;
@@ -93,6 +102,7 @@ h3 {
   border-radius: 5px;
   cursor: pointer;
 }
+
 .but-mid1 {
   padding: 7px;
   background: green;
@@ -101,10 +111,12 @@ h3 {
   border-radius: 5px;
   cursor: pointer;
 }
+
 .buttons {
   margin-top: 10px;
   padding-left: 5px;
 }
+
 button {
   margin: 5px;
 }
@@ -117,6 +129,7 @@ button {
   border-radius: 10px;
   outline: none;
 }
+
 .input-para {
   width: 330px;
   height: 120px;
@@ -124,6 +137,7 @@ button {
   border-radius: 10px;
   outline: none;
 }
+
 .category {
   margin: 10px;
 }

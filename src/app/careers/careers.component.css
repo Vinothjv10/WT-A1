@@ -3,6 +3,7 @@
   margin: 0px;
   box-sizing: border-box;
 }
+
 .HEADER {
   font-family: Roboto;
   font-style: normal;
@@ -16,73 +17,87 @@
 }
 
 .rows {
-  margin-top: 50px;
+  /* margin-top: 50px; */
   width: 100%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
+
 .row-1 {
   height: 100px;
   width: 550px;
   margin: 10px;
 }
+
 .row-2 {
   height: 130px;
   width: 300px;
   margin: 10px;
 }
+
 .row-2-1 {
   height: 50px;
   width: 250px;
 }
+
 .row-2-2 {
   margin-top: 10px;
   height: 50px;
   width: 280px;
 }
+
 .row-3 {
   height: 130px;
   width: 300px;
   margin: 10px;
 }
+
 .row-3-1 {
   height: 50px;
   width: 250px;
 }
+
 .row-3-2 {
   margin-top: 10px;
   height: 50px;
   width: 280px;
 }
+
 .row-4 {
   height: 130px;
   width: 300px;
   margin: 10px;
 }
+
 .row-4-1 {
   height: 50px;
   width: 250px;
 }
+
 .row-4-2 {
   margin-top: 10px;
   height: 50px;
   width: 280px;
 }
+
 .row-5 {
   height: 130px;
   width: 300px;
   margin: 10px;
 }
+
 .row-5-1 {
   height: 50px;
   width: 250px;
 }
+
 .row-5-2 {
   margin-top: 10px;
   height: 50px;
   width: 280px;
 }
+
 /* Search Inputs */
 
 #input {
@@ -94,6 +109,7 @@
   border-radius: 50px;
   outline: none;
 }
+
 #font {
   font-size: 30px;
 }
@@ -103,6 +119,7 @@ img {
   height: 32px;
   width: 32px;
 }
+
 .boxcontainer {
   margin: auto;
   margin-top: 60px;
@@ -114,16 +131,19 @@ img {
   border-radius: 30px;
   padding: 0px 5px;
 }
+
 .title-head {
   font-size: 24px;
   font-weight: 800;
   padding-bottom: 10px;
 }
+
 .elementscontainer {
   width: 100%;
   height: 100%;
   vertical-align: middle;
 }
+
 #search {
   border: none;
   outline: none;
@@ -133,9 +153,11 @@ img {
   font-size: 1rem;
   text-transform: uppercase;
 }
+
 input {
   margin-right: 50px;
 }
+
 .no-result {
   text-align: center;
   font-size: 30px;
@@ -151,38 +173,46 @@ input {
     outline: none;
     font-size: 20px;
   }
+
   .search {
     font-size: 20px;
   }
+
   .row-2 {
     margin-top: 30px;
   }
+
   img {
     margin-left: 20px;
     height: 22px;
     width: 22px;
   }
 }
+
 @media (max-width: 560px) {
   .boxcontainer {
     width: 300px;
   }
 }
+
 @media (max-width: 280px) {
   .boxcontainer {
     width: 200px;
   }
 }
+
 /* Card Section */
 
-.container {
+.container_10 {
+  margin-top: 60px;
   margin: 20px;
-  padding-top: 55px;
+  /* padding-top: 55px; */
 }
 
-.row {
+.rows {
   width: 100%;
   height: 100%;
+  margin-top: 60px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -206,6 +236,7 @@ input {
   padding-left: 10px;
   color: #e40276;
 }
+
 .font {
   padding: 5px;
   font-family: Poppins;
@@ -216,16 +247,19 @@ input {
 
   color: #282725;
 }
+
 .font-1 {
   text-align: center;
   padding-left: 0px;
 }
+
 .login,
 h3 {
   text-align: center;
   font-size: 23px;
   font-family: 600px;
 }
+
 button {
   height: 50px;
   width: 250px;
@@ -237,15 +271,18 @@ button {
   border: none;
   background-image: linear-gradient(90deg, #e85c0c 0%, #e40276 82.81%);
 }
+
 .descrip {
   margin-top: 10px;
   height: 70px;
 }
+
 .apply {
   margin-top: 60px;
   text-align: center;
   cursor: pointer;
 }
+
 
 @media (max-width: 560px) {
   .card {

@@ -1,4 +1,4 @@
-<body>  
+<body>
     <!-- Header Content-->
 
     <div class="header">
@@ -9,13 +9,15 @@
         </div>
         <div class="row-2">
             <div class="row2">
-                <p class="bfont">At Honeycomb Technologies we are committed to address the customer challenges and create exponential value to our customers. Our services include Product Development, IT Services and Consultancy and Staff Augmentation. 
+                <p class="bfont">At Hub-Spot Technologies we are committed to address the customer challenges and
+                    create exponential value to our customers. Our services include Product Development, IT Services and
+                    Consultancy and Staff Augmentation.
                 </p>
             </div>
         </div>
     </div>
 
-                            <!--Main Content-->
+    <!--Main Content-->
 
     <div class="main">
         <div class="backgrd">
@@ -24,11 +26,11 @@
                     <p class="cfont">WHAT WE ARE OFFERING</p>
                 </div>
             </div>
-            
-                    <!--Box Content-->
 
-            <div class="container">
-            
+            <!--Box Content-->
+
+            <div class="container_1">
+
                 <div class="card">
                     <div class="card1">
                         <img src="assets\group.png" alt="">
@@ -44,7 +46,7 @@
                 </div>
                 <div class="card">
                     <div class="card3">
-                        <img src="assets\setting.png" >
+                        <img src="assets\setting.png">
                     </div>
                     <div class="para"> IT Services</div>
                 </div>
@@ -54,66 +56,85 @@
                     </div>
                     <div class="para" id="para4">Self Augmentation</div>
                 </div>
-            
+
             </div>
             <div class="bigbox">
                 <div class="content">
-                <div id="head2">
-                    <h4> Products Development: </h4>
-                    <p class="ffont"> At Honeycomb, we strive to be a product driven company focusing on developing unique products which brings great value to customers </p>
-                </div>
-                <div class="head2">
-                    <h4> Digitization: </h4>
-                    <p class="ffont">We help you digitize your business- we as a customer centric company, help customers by bringing customized solutions to suit their unique business needs. We build multi-platform apps - iOS App Development, Android App Development, Web App Development to help you achieve your business goals. </p>
-                </div>
-                <div class="head2">
-                    <h4> Staff Augmentation: </h4>
-                    <p class="ffont">We understand there are times when customers need to scale up to support critical projects with niche skill sets. We stand by our customers to support with highly skilled go-getters. We do complete due diligence in selecting our team, so our customers can confidently rely on us to provide the best team to deliver on time with high quality. </p>
+                    <div id="head2">
+                        <h4> Products Development: </h4>
+                        <p class="ffont"> At Hub-Spot, we strive to be a product driven company focusing on developing
+                            unique products which brings great value to customers </p>
+                    </div>
+                    <div class="head2">
+                        <h4> Digitization: </h4>
+                        <p class="ffont">We help you digitize your business- we as a customer centric company, help
+                            customers by bringing customized solutions to suit their unique business needs. We build
+                            multi-platform apps - iOS App Development, Android App Development, Web App Development to
+                            help you achieve your business goals. </p>
+                    </div>
+                    <div class="head2">
+                        <h4> Staff Augmentation: </h4>
+                        <p class="ffont">We understand there are times when customers need to scale up to support
+                            critical projects with niche skill sets. We stand by our customers to support with highly
+                            skilled go-getters. We do complete due diligence in selecting our team, so our customers can
+                            confidently rely on us to provide the best team to deliver on time with high quality. </p>
 
-                </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-                            <!--Icon section-->
+    <!--Icon section-->
 
 
     <div id="backgrd">
         <div class="icon">
             <div class="icons">
                 <div (click)="digital()" class="icon1">
-                   <img src="assets\phone.png">
+                    <img src="assets\phone.png">
                 </div>
                 <div class="title1">
-                   <div *ngIf="triang1" class="triangle-1" id="triangle-1">
-                        <div id="tri1" ><div id="tri1-edit"><p id="tri1">Digital Services</p> </div>  </div> 
+                    <div *ngIf="triang1" class="triangle-1" id="triangle-1">
+                        <div id="tri1">
+                            <div id="tri1-edit">
+                                <p id="tri1">Digital Services</p>
+                            </div>
+                        </div>
                     </div>
-                   <p id="dfont" *ngIf="digital1" > Digital Services  </p>  
-                 </div>
+                    <p id="dfont" *ngIf="digital1"> Digital Services </p>
+                </div>
             </div>
             <div class="icons">
                 <div (click)="tools()" class="icon2">
-                        <img src="assets\apple.png" id="icon2">
-                        <img src="assets\android.png" id="icon3" >
+                    <img src="assets\apple.png" id="icon2">
+                    <img src="assets\android.png" id="icon3">
                 </div>
                 <div class="title2">
-            <div *ngIf="triang2" class="triangle-2" id="triangle-2">
-                 <div id="tri2"><div id="tri2-edit"><p> Tools and Technologies</p></div>  </div>
-                 </div>        
-                  <p id="dfont" *ngIf="tool">Tools and Technologies </p>  
-                 </div>
+                    <div *ngIf="triang2" class="triangle-2" id="triangle-2">
+                        <div id="tri2">
+                            <div id="tri2-edit">
+                                <p> Tools and Technologies</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p id="dfont" *ngIf="tool">Tools and Technologies </p>
+                </div>
             </div>
             <div class="icons">
                 <div (click)="product()" class="icon4">
-                    <img src="assets\group.png" > 
+                    <img src="assets\group.png">
                 </div>
-                    <div class="title3">
-                       <div *ngIf="triang3" class="triangle-3" id="triangle-3">
-                            <div id="tri3"><div id="tri3-edit"><p> Our Product</p></div> </div>
-                       </div>
-                       <p id="dfont" *ngIf="product1"> Our Product </p> 
+                <div class="title3">
+                    <div *ngIf="triang3" class="triangle-3" id="triangle-3">
+                        <div id="tri3">
+                            <div id="tri3-edit">
+                                <p> Our Product</p>
+                            </div>
+                        </div>
                     </div>
-           </div>
+                    <p id="dfont" *ngIf="product1"> Our Product </p>
+                </div>
+            </div>
         </div>
 
 
@@ -123,33 +144,42 @@
                     <div class="icon-cont3">
 
                         <p *ngIf="digitaledit" class="gfont"> Digital Services: </p>
-                        <p *ngIf="digitaledit" class="hfont"> iOS App Development,Android App Development,Web App Development, UI/UX Design, Chatbots </p>
+                        <p *ngIf="digitaledit" class="hfont"> iOS App Development,Android App Development,Web App
+                            Development, UI/UX Design, Chatbots </p>
 
                         <p *ngIf="tooledit" class="gfont">Tools and Technologies: </p>
                         <p *ngIf="tooledit" class="hfont">
-                              HTML  <img id="tool-img" src="assets/tools/html.png" > ,
-                              CSS <img id="tool-img" src="assets/tools/css.png">  , 
-                              Javascript <img id="tool-img" src="assets/tools/js.png">,
-                              iOnic  <img id="tool-img" src="assets/tools/ionic.png"> ,
-                              Angular   <img id="tool-img" src="assets/tools/angular.png">,
-                              mongoDB <img id="tool-img" src="assets/tools/mangodb.png">, 
-                              firebase  <img id="tool-img" src="assets/tools/firebase.png">, 
-                              AWS <img id="tool-img" src="assets/tools/aws.png">
-                         </p>
+                            HTML <img id="tool-img" src="assets/tools/html.png"> ,
+                            CSS <img id="tool-img" src="assets/tools/css.png"> ,
+                            Javascript <img id="tool-img" src="assets/tools/js.png">,
+                            iOnic <img id="tool-img" src="assets/tools/ionic.png"> ,
+                            Angular <img id="tool-img" src="assets/tools/angular.png">,
+                            mongoDB <img id="tool-img" src="assets/tools/mangodb.png">,
+                            firebase <img id="tool-img" src="assets/tools/firebase.png">,
+                            AWS <img id="tool-img" src="assets/tools/aws.png">
+                        </p>
 
                         <p *ngIf="productedit" class="gfont"> Our Products: </p>
-                        <p *ngIf="productedit" class="hfont"> ShapeMeUp: Physical Fitness has become paramount importance more than ever with the onset of pandemic. With so many people realizing the importance of maintaining fitness and yet stuck at home with no access to fitness facilities, we at Honeycomb have opened the endless possibilities of accessing unique fitness training programs and customized diet plans to suit specific needs of individuals. Whatever your fitness goals are - ShapeMeUp will help you with defining a robust and pragmatic plan, perform consistently and achieve your goals successfully. With ShapeMeUp, “you are not alone” - we have professional trainers and dieticians who coach and motivate you continuously in your journey.  </p>
+                        <p *ngIf="productedit" class="hfont"> ShapeMeUp: Physical Fitness has become paramount
+                            importance more than ever with the onset of pandemic. With so many people realizing the
+                            importance of maintaining fitness and yet stuck at home with no access to fitness
+                            facilities, we at Honeycomb have opened the endless possibilities of accessing unique
+                            fitness training programs and customized diet plans to suit specific needs of individuals.
+                            Whatever your fitness goals are - ShapeMeUp will help you with defining a robust and
+                            pragmatic plan, perform consistently and achieve your goals successfully. With ShapeMeUp,
+                            “you are not alone” - we have professional trainers and dieticians who coach and motivate
+                            you continuously in your journey. </p>
 
                     </div>
                 </div>
             </div>
         </div>
     </div>
-                        <!--Our Clints-->
+    <!--Our Clints-->
 
-    <div class="clint">
+    <!-- <div class="clint">
         <div class="clint-font">
             Our Clients
         </div>
-    </div>
- </body>
+    </div> -->
+</body>
